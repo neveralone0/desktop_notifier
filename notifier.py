@@ -1,8 +1,10 @@
 import random
 import notify2
+from pathlib import Path
 
-quote_path = '---your path---'
-heart_path = '---your path---'
+BASE_DIR = Path(__file__).resolve().parent.parent
+quote_path = BASE_DIR / 'quots.txt'
+heart_path = BASE_DIR / 'heart.png'
 
 
 def sendmessage(title, message):
